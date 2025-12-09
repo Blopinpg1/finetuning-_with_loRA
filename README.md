@@ -126,4 +126,4 @@ Contributions are welcome. Please open an issue or PR with proposed changes or i
 
 ## License
 
-Specify the license for this project here (e.g., MIT, Apache-2.0). If you don't have a license yet, add one or contact the project owner.
+-MII license
