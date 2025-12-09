@@ -1,0 +1,27 @@
+# Core ML / HF libraries
+torch>=1.13.1          # or a CUDA-enabled build (e.g., torch==2.2.0+cu121) depending on your GPU
+transformers>=4.30.0
+datasets>=2.11.0
+accelerate>=0.20.3
+peft>=0.4.0
+bitsandbytes>=0.39.0   # optional, required for 8-bit optimizations (GPU)
+safetensors>=0.3.2
+
+# Tokenizers / tokenization helpers
+tokenizers>=0.13.3
+sentencepiece>=0.1.98  # if using models that require it (e.g., T5, mBART)
+
+# Utilities & notebook/dev
+jupyter
+ipykernel
+tqdm>=4.64.0
+einops>=0.6.0
+
+# Optional / logging / evaluation (uncomment if used)
+# wandb
+# evaluate
+
+# Notes:
+# - Pin torch to a CUDA-specific wheel if you have GPUs (e.g., `pip install torch==2.2.0+cu121 -f https://download.pytorch.org/whl/torch_stable.html`).
+# - bitsandbytes requires a matching CUDA toolkit; if you don't want it, remove it.
+# - Add any project-specific packages found in README or notebook (e.g., data-processing libs).
